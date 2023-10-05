@@ -1,1 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1d0870;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.search-container {
+    position: relative;
+}
+
+#search {
+    flex: 1; /* Expand to fill available space */
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*#search-button img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}*/
+.suggestions {
+    list-style: left;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1042ce;
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: relative;
+}
+
+.suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #1d245e;
+}
+
+#project-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-column {
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #7077d8;
+    border-radius: 5px;
+}
 
