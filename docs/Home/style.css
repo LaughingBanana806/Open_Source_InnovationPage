@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(1deg, #b87fb9, #283440);
+  background: #283440;
+  /* background: #393d4e; */
+  color: white;
+  
+}
+
+section {
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(101, 15, 124);
+  border-radius: 5px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(252, 174, 249);
+  font-size: 1.01rem;
+  text-decoration: overline;
+}
+
+.left {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.right {
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.firstSection > div {
+  align-items: center;
+}
+
+#name {
+  color: blueviolet;
+}
+
+#element {
+  color: rgb(170, 96, 239);
+  /* font-size: 2rem; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #8e1f88;
+  color: #ea51d6;
+  font-weight: bold;
+}
+
+.content-firstSection {
+  font-size: 100%;
+  padding: 50px;
+  text-align: center;
+  /* color: white; */
+}
+
+.secondSection {
+  margin: 20px;
+}
+
+.thirdSection{
+  margin: 20px;
+}
+
+/* CSS for feature cards with hover and transition effects */
+.feature {
+  background-color: #384757;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.feature:hover {
+  transform: scale(1.02); /* Enlarge on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  background-color: #546a81; /* Change background color on hover */
+}
+
+.feature-description {
+  margin-top: 10px;
+  transition: color 0.2s;
+}
+
+.feature:hover .feature-description {
+  color: #fff; /* Change text color on hover */
+}
+
+.forthSection {
+  margin: 20px;
+}
+
+.fifthSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  margin: 30px;
+  align-items: start;
+}
+
+
+/* CSS for the outer circle */
+.outer-circle {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  position: relative;
+  border: 2px solid white;
+  animation: rotateClockwise 10s linear infinite;
+  
+ 
+}
+
+/* CSS for the inner circle */
+.inner-circle {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* left: 35px;
+  right: 100%; */
+  background: transparent;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  animation: rotateAntiClockwise 5s linear infinite;
+  padding-left: 40px;
+
+}
+
+
+/* CSS for the images */
+img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: contain; 
+  position: absolute;
+}
+
+.outer-icon, .inner-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  position: absolute;
+  transform: translate(-50%, -50%); /* Center the icons on the circle */
+  top: 0; /* Position the icons above the circle */
+}
+
+/* CSS for the center point */
+.center-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* CSS for the language icons */
+.language-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  /* object-fit: contain; */
+}
+
+
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateAntiClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+/* CSS for the "Why Choose DevSphere" section */
+.why-choose {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: center;
+  padding: 40px;
+  align-items: stretch; /* Make all items same height */
+}
+
+.choose-card {
+  flex: 1;
+  background-color: #384757;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fade-in 1s ease-in-out;
+  opacity: 0; /* Initially, set opacity to 0 */
+  transform: translateY(20px); /* Initially, add a slight upward translation effect */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.animate-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.choose-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.choose-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Define the fade-in animation */
+@keyframes fade-in {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Add a slight upward translation effect */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.footer {
+  background-color: rgb(101, 15, 124);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  /* height: 100px; */
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
