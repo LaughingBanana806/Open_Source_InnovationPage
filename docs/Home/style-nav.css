@@ -1,0 +1,108 @@
+/* Add CSS for responsive navbar and footer */
+
+header {
+    background-color: rgb(101, 15, 124);
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    background-color: rgb(101, 15, 124);
+    border-radius: 5px;
+}
+
+.left {
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    gap: 50px;
+}
+
+.right li {
+    font-weight: bold;
+}
+
+/* CSS for a basic button */
+button {
+    display: inline-block;
+    padding: 10px ; /* Adjust padding as needed */
+    background-color: #bd42ad; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    /* font-size: 12px; */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+button:hover {
+    background-color: #c874d3; /* Change background color on hover */
+    color: #ffffff; /* Change text color on hover */
+    font-size: 1.01rem;
+}
+
+.footer{
+    background-color: rgb(101, 15, 124);
+    height: auto;
+}
+
+footer {
+    background-color: rgb(101, 15, 124);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+}
+
+.socials ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    margin-right: 10px;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {    
+    .contact {
+        justify-content: center;
+        align-items: center;
+    }
+    .socials {
+        display: flex;
+        text-align: center;
+        align-content: space-between;
+    }
+}
+
+
+/* Add responsive CSS as needed */
