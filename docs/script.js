@@ -15,7 +15,7 @@ function listViewToggle(listType,button){
         list.classList.remove("listExpanded")
         list.classList.add("listShortened")
 
-        button.innerText="View More";
+        button.innerText="View All";
 
     }
     else {
