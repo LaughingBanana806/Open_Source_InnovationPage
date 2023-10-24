@@ -93,7 +93,6 @@ a {
 }
 
 .add-project-content {
-    display: none;
     max-width: 500px;
     text-align: center;
 }
@@ -144,16 +143,25 @@ button:hover {
     font-size: 24px;
 }
 
-.my-drafts-section ul {
+.my-drafts-section ul ,.my-projects-section ul {
     list-style: none;
     padding: 0;
+    display:flex;
+    flex-wrap:wrap;
+}
+.listShortened{
+    height:200px;
+    overflow: hidden;
+}
+.listExpanded {
+    height:auto;
+}
+.my-drafts-section li ,.my-projects-section li {
+    margin: 20px 10px;
 }
 
-.my-drafts-section li {
-    margin: 20px 0;
-}
 
-.my-drafts-section a {
+.my-drafts-section a ,.my-projects-section li {
     text-decoration: none;
     color: #333;
     display: block;
@@ -166,3 +174,4 @@ button:hover {
 .my-drafts-section a:hover {
     background-color: #f7f7f7;
 }
+
