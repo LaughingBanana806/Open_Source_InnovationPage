@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#my-profile">My Profile</a></li>
+            <li><a href="#my-projects">My Projects</a></li>
+            <li><a href="#explore-projects">Explore Projects</a></li>
+        </ul>
+        <div class="profile-dropdown">
+            <button class="profile-button">Profile</button>
+            <div class="profile-content">
+                <a href="#profile">Profile Link</a>
+                <a href="#settings">Settings</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
 
+    <section class="add-project-section">
+        <div class="add-project-icon" id="add-project-icon">
+            <img src="add-project-icon.png" alt="Add a Project">
+        </div>
+        <div class="add-project-content" id="add-project-content">
+            <h2>Add a New Project</h2>
+            <form id="project-form">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" name="project-name">
+                <label for="project-description">Description:</label>
+                <textarea id="project-description" name="project-description"></textarea>
+                <button type="submit">Submit</button>
+                <button type="button" id="save-draft">Save as Draft</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="my-drafts-section">
+        <h2>My Drafts</h2>
+        <ul>
+            <li>
+                <a href="draft1.html">
+                    <h3>Draft 1</h3>
+                    <p>Date: January 15, 2023</p>
+                    <p>Project Name: Draft Project 1</p>
+                    <p>Description: This is a draft project description.</p>
+                </a>
+            </li>
+            <li>
+                <a href="draft2.html">
+                    <h3>Draft 2</h3>
+                    <p>Date: February 2, 2023</p>
+                    <p>Project Name: Draft Project 2</p>
+                    <p>Description: Another draft project description.</p>
+                </a>
+            </li>
+            <!-- Add more draft items as needed -->
+        </ul>
+    </section>
+
+    <section class="my-projects-section">
+        <h2>My Projects</h2>
+        <ul>
+            <li>
+                <h3>Project 1</h3>
+                <p>Date: January 20, 2023</p>
+                <p>Description: This is a submitted project description.</p>
+            </li>
+            <li>
+                <h3>Project 2</h3>
+                <p>Date: February 5, 2023</p>
+                <p>Description: Another submitted project description.</p>
+            </li>
+            <!-- Add more project items as needed -->
+        </ul>
+    </section>
+
+</body>
+</html>
